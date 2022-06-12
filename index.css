@@ -1,0 +1,40 @@
+/* Define variables at the root level so their scope is the entire document */
+:root {
+    --base: goldenrod;
+    --blur: 10px;
+    --padding: 10px;
+  }
+
+  /* Set image property values using previously defined variables */
+  img {
+    box-sizing: border-box;
+    background: var(--base);
+    filter: blur(var(--blur));
+    padding: var(--padding);
+    border-radius: 2rem;
+  }
+
+  /* 'JS' text color that will match the image background color */
+  .hl {
+    color: var(--base);
+  }
+
+  body {
+    text-align: center;
+  }
+
+  body {
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width:100px;
+  }
